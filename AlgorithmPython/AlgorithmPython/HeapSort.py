@@ -1,8 +1,8 @@
 import random
 
-Left = lambda i: 2*i
-Right = lambda i: 2*i + 1
-Parent = lambda i: i/2
+Left = lambda i: 2*i + 1
+Right = lambda i: 2*i + 2
+Parent = lambda i: i/2 - 1
 
 Array = [4, 1, 3, 2, 16, 9, 10, 14, 8, 7]
 
