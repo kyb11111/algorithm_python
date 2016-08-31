@@ -5,7 +5,7 @@
     <SchemaVersion>2.0</SchemaVersion>
     <ProjectGuid>78cae695-3289-4f99-b918-f7186191251c</ProjectGuid>
     <ProjectHome>.</ProjectHome>
-    <StartupFile>Test.py</StartupFile>
+    <StartupFile>Data Structure\BinarySearchTree.py</StartupFile>
     <SearchPath>
     </SearchPath>
     <WorkingDirectory>.</WorkingDirectory>
@@ -26,25 +26,22 @@
     <PtvsTargetsFile>$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\Python Tools\Microsoft.PythonTools.targets</PtvsTargetsFile>
   </PropertyGroup>
   <ItemGroup>
-    <Compile Include="PriorityQueue.py">
-      <SubType>Code</SubType>
-    </Compile>
-    <Compile Include="HeapSort.py">
-      <SubType>Code</SubType>
-    </Compile>
-    <Compile Include="InsertionSort.py" />
+    <Compile Include="Data Structure\BinarySearchTree.py" />
+    <Compile Include="Data Structure\PriorityQueue.py" />
     <Compile Include="MaximunSubarray.py">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="MergeSort.py">
-      <SubType>Code</SubType>
-    </Compile>
-    <Compile Include="QuickSort.py">
-      <SubType>Code</SubType>
-    </Compile>
+    <Compile Include="Sort\HeapSort.py" />
+    <Compile Include="Sort\InsertionSort.py" />
+    <Compile Include="Sort\MergeSort.py" />
+    <Compile Include="Sort\QuickSort.py" />
     <Compile Include="Test.py">
       <SubType>Code</SubType>
     </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Data Structure\" />
+    <Folder Include="Sort\" />
   </ItemGroup>
   <Import Condition="Exists($(PtvsTargetsFile))" Project="$(PtvsTargetsFile)" />
   <Import Condition="!Exists($(PtvsTargetsFile))" Project="$(MSBuildToolsPath)\Microsoft.Common.targets" />
